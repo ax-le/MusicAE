@@ -1,0 +1,8 @@
+ - librosa
+ - madmom
+ - mir_eval
+ - mirdata
+ - numpy
+ - pandas (for tables in the notebooks, not used otherwise).
+ - soundfile
+ - torch
