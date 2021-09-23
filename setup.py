@@ -8,7 +8,7 @@ setuptools.setup(
     version="0.1.0",
     author="Marmoret Axel",
     author_email="axel.marmoret@irisa.fr",
-    description="Package for single-song autoencoders applied on musical segmentation",
+    description="Package for single-song autoencoders applied on musical segmentation.",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://gitlab.inria.fr/amarmore/musicae",    
@@ -33,7 +33,8 @@ setuptools.setup(
         'pandas',
         'scipy == 1.4.1',
         'soundfile',
+        'tensorly == 0.5.1',
         'torch == 1.8.0'
     ],
-    python_requires='==3.8',
+    python_requires='==3.8.*',
 )

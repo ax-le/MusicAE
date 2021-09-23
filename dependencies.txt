@@ -5,4 +5,5 @@
  - numpy
  - pandas (for tables in the notebooks, not used otherwise).
  - soundfile
+ - tensorly
  - torch
