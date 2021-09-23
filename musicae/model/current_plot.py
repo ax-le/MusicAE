@@ -61,7 +61,7 @@ def plot_latent_space(latent_vectors, labels = None):
 
     """
     np_lv = np.array(latent_vectors)
-    plot_me_this_spectrogram(np_lv.T, figsize=(np_lv.shape[0]/5,np_lv.shape[1]/5), title = "z matrix")
+    plot_me_this_spectrogram(np_lv.T, figsize=(np_lv.shape[0]/5,np_lv.shape[1]/5), title = "z matrix", x_axis = "Bar index", y_axis = "Latent space")
     
     fig, axs = plt.subplots(1, 2, figsize=(15,7))
 
@@ -70,6 +70,8 @@ def plot_latent_space(latent_vectors, labels = None):
     axs[0].pcolormesh(np.arange(padded_autosimil.shape[1]), np.arange(padded_autosimil.shape[0]), padded_autosimil, cmap = cm.Greys)
     axs[0].set_title('Autosimilarity of the z (projection in latent space)')
     axs[0].invert_yaxis()
+    axs[0].set_xlabel("Bar index")
+    axs[0].set_ylabel("Bar index")
     
     if np_lv.shape[1] == 2:
         if not isinstance(labels,np.ndarray) and labels == None:
